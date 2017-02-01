@@ -1,4 +1,6 @@
-package com.irenezar.app.classwork.lesson3;
+package com.irenezar.runners;
+
+import com.irenezar.app.classwork.lesson2.NarrowingCasting;
 
 /**
  * Created by new_user on 1/23/2017.

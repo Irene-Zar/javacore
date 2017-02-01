@@ -1,4 +1,4 @@
-package com.irenezar.app.utils.runners;
+package com.irenezar.runners;
 
 import com.irenezar.app.utils.convertors.PrimitiveConvertor;
 

@@ -1,0 +1,16 @@
+package com.irenezar.app.homework.lesson3;
+
+import org.junit.Test;
+import org.junit.Assert;
+
+import static org.junit.Assert.*;
+
+/**
+ * Created by new_user on 1/26/2017.
+ */
+public class ModTest {
+    @Test
+    public void mod() {
+        Mod mod = new Mod();
+        Assert.assertEquals(1, mod.mod(16,3));}
+        }
