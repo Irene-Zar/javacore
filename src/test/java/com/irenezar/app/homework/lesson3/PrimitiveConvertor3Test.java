@@ -14,4 +14,9 @@ public class PrimitiveConvertor3Test {
         PrimitiveConvertor3 primitiveConvertor3 = new PrimitiveConvertor3();
         Assert.assertEquals(104, primitiveConvertor3.charToInt('h'));
     }
+    @Test
+    public void charToInt2(){
+        PrimitiveConvertor3 primitiveConvertor32 = new PrimitiveConvertor3();
+        Assert.assertNotEquals(100, primitiveConvertor32.charToInt('h'));
+    }
 }

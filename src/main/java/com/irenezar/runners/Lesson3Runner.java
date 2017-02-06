@@ -1,6 +1,6 @@
 package com.irenezar.runners;
 
-import com.irenezar.app.utils.convertors.PrimitiveConvertor;
+import com.irenezar.outdated.PrimitiveConvertor;
 
 /**
  * Created by new_user on 1/23/2017.

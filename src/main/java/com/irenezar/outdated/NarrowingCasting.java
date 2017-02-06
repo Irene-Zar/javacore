@@ -1,4 +1,4 @@
-package com.irenezar.app.classwork.lesson2;
+package com.irenezar.outdated;
 
 /**
  * Created by new_user on 1/23/2017.

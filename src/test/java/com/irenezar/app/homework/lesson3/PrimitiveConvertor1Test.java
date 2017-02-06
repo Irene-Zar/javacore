@@ -14,5 +14,10 @@ public class PrimitiveConvertor1Test {
         PrimitiveConvertor1 primitiveConvertor1 = new PrimitiveConvertor1();
         Assert.assertEquals('r', primitiveConvertor1.intToChar(114));
     }
+    @Test
+    public void intToChar2() {
+        PrimitiveConvertor1 primitiveConvertor2 = new PrimitiveConvertor1();
+        Assert.assertNotEquals('f', primitiveConvertor2.intToChar(114));
+    }
 
 }

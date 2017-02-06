@@ -14,5 +14,9 @@ public class PrimitiveConvertor2Test {
     PrimitiveConvertor2 primitiveConvertor2 = new PrimitiveConvertor2();
     Assert.assertEquals('0', primitiveConvertor2.floatToChar(48.25f));
     }
-
+    @Test
+    public void floatToChar2() {
+        PrimitiveConvertor2 primitiveConvertor22 = new PrimitiveConvertor2();
+        Assert.assertNotEquals('d', primitiveConvertor22.floatToChar(48.25f));
+    }
 }

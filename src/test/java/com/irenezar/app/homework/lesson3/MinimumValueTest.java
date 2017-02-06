@@ -14,5 +14,10 @@ public class MinimumValueTest {
         MinimumValue minimumValue = new MinimumValue();
         Assert.assertEquals(3, minimumValue.minimum(7,3));
     }
+    @Test
+    public void minimum2() {
+        MinimumValue minimumValue2 = new MinimumValue();
+        Assert.assertNotEquals(7, minimumValue2.minimum(7,3));
+    }
 
 }

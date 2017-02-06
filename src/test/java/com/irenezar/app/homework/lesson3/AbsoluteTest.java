@@ -15,4 +15,10 @@ public class AbsoluteTest {
         Assert.assertEquals(3.12, absolute1.absol(-3.11f), 0.1);
         }
 
+    @Test
+    public void abs2() {
+        Absolute absolute2 = new Absolute();
+        Assert.assertNotEquals(1,absolute2.absol(-5.01f),0.01);
+    }
+
 }

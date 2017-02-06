@@ -12,4 +12,9 @@ public class ExponentTest {
         Exponent exponent = new Exponent();
         Assert.assertEquals(1,exponent.exp(2.7f),0.1);
     }
+    @Test
+    public void expon2() {
+        Exponent exponent2 = new Exponent();
+        Assert.assertNotEquals(0,exponent2.exp(2.7f),0.1);
+    }
 }

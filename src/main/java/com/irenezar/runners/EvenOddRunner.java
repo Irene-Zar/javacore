@@ -1,6 +1,6 @@
 package com.irenezar.runners;
 
-import com.irenezar.app.classwork.lesson4.EvenOdd;
+import com.irenezar.outdated.EvenOdd;
 
 /**
  * Created by new_user on 1/26/2017.

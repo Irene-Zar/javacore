@@ -13,4 +13,8 @@ public class SubtractTest {
     public void sub(){
            Subtract subtract = new Subtract();
             Assert.assertEquals(10, subtract.sub(25,15));}
+    @Test
+    public void sub2(){
+        Subtract subtract2 = new Subtract();
+        Assert.assertNotEquals(5, subtract2.sub(25,15));}
     }

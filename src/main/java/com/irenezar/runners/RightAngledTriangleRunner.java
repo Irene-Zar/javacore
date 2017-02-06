@@ -1,6 +1,6 @@
 package com.irenezar.runners;
 
-import com.irenezar.app.classwork.lesson4.RightAngledTriangle;
+import com.irenezar.outdated.RightAngledTriangle;
 
 /**
  * Created by new_user on 1/26/2017.

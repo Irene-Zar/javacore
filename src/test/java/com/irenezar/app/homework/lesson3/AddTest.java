@@ -10,5 +10,10 @@ public class AddTest {
     @Test
     public void add(){
         Add add = new Add();
-        Assert.assertEquals(8, add.add(5,3));}
+        Assert.assertEquals(8, add.add(5,3));
+}
+    @Test
+    public void add2(){
+        Add add2 = new Add();
+        Assert.assertNotEquals(4,add2.add(1,1));}
 }
