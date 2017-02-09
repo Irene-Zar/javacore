@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class RightAngledTriangle {
          public static void calculate(){
             Scanner scanner= new Scanner(System.in);
-            System.out.println("Enter one side of a triangle: ");
-            double a = scanner.nextDouble();
+             System.out.println("Enter one side of a triangle: ");
+             double a = scanner.nextDouble();
             System.out.println("Enter second side of a triangle: ");
             double b = scanner.nextDouble();
             System.out.println("Enter third side of a triangle: ");
