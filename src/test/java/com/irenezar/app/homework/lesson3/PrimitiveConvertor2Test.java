@@ -1,18 +1,22 @@
 package com.irenezar.app.homework.lesson3;
 
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
+@RunWith(JUnitParamsRunner.class)
 
-/**
- * Created by new_user on 1/26/2017.
- */
+
 public class PrimitiveConvertor2Test {
     @Test
-    public void floatToChar() {
-    PrimitiveConvertor2 primitiveConvertor2 = new PrimitiveConvertor2();
-    Assert.assertEquals('0', primitiveConvertor2.floatToChar(48.25f));
+    @FileParameters(value = "src/test/resources/floattochar.csv",
+            mapper = CsvWithHeaderMapper.class)
+    public void floatToChar(float number, char result) {
+    Assert.assertEquals(result, PrimitiveConvertor2.floatToChar(number));
     }
     @Test
     public void floatToChar2() {

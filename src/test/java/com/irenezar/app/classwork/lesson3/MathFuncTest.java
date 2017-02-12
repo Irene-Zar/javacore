@@ -6,9 +6,7 @@ import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 
-import java.util.Arrays;
 
 @RunWith(JUnitParamsRunner.class)
 

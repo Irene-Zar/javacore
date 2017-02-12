@@ -1,21 +1,25 @@
 package com.irenezar.app.homework.lesson3;
 
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.Test;
 import org.junit.Assert;
+import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
 
-/**
- * Created by new_user on 1/26/2017.
- */
+@RunWith(JUnitParamsRunner.class)
+
 public class SquareRootTest {
     @Test
-    public void sqroot() {
-        SquareRoot squareRoot = new SquareRoot();
-        Assert.assertEquals(3, squareRoot.sqroot(9), 0.1);
+    @FileParameters(value = "src/test/resources/squarerootpositive.csv",
+            mapper = CsvWithHeaderMapper.class)
+    public void squarerootpositive(float a, float result) {
+        Assert.assertEquals(result, SquareRoot.sqroot(a), 0.01);
     }
+
     @Test
-    public void sqroot2() {
+    public void squarerootnegative() {
         SquareRoot squareRoot2 = new SquareRoot();
         Assert.assertNotEquals(0, squareRoot2.sqroot(9));
     }

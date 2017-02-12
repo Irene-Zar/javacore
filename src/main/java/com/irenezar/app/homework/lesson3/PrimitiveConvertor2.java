@@ -5,7 +5,7 @@ package com.irenezar.app.homework.lesson3;
  */
 public class PrimitiveConvertor2 {
 
-    public char floatToChar(float floatstartvalue) {
+    public static char floatToChar(float floatstartvalue) {
         char charresult2 = (char) floatstartvalue;
         return charresult2;
     }

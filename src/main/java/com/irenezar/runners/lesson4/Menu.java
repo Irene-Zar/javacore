@@ -1,4 +1,4 @@
-package com.irenezar.runners;
+package com.irenezar.runners.lesson4;
 
 import com.irenezar.app.classwork.lesson4.*;
 import com.irenezar.app.homework.lesson4.BiggerNumber;

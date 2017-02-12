@@ -1,24 +1,26 @@
 package com.irenezar.app.homework.lesson3;
 
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.Test;
 import org.junit.Assert;
+import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
+@RunWith(JUnitParamsRunner.class)
 
-/**
- * Created by new_user on 1/26/2017.
- */
 public class AbsoluteTest {
     @Test
-    public void abs() {
-        Absolute absolute1 = new Absolute();
-        Assert.assertEquals(3.12, absolute1.absol(-3.11f), 0.1);
-        }
+    @FileParameters(value = "src/test/resources/absolutepositive.csv",
+            mapper = CsvWithHeaderMapper.class)
 
-    @Test
-    public void abs2() {
-        Absolute absolute2 = new Absolute();
-        Assert.assertNotEquals(1,absolute2.absol(-5.01f),0.01);
+    public void absolutepositive(float number, float result) {
+        Assert.assertEquals(result, Absolute.convert(number), 0.1);
     }
 
+    @Test
+    public void absolutenegative() {
+        Absolute absolute2 = new Absolute();
+        Assert.assertNotEquals(1, absolute2.convert(-5.01f), 0.01);
+    }
 }

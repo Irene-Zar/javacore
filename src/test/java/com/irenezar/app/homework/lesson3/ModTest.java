@@ -1,18 +1,22 @@
 package com.irenezar.app.homework.lesson3;
 
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.Test;
 import org.junit.Assert;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by new_user on 1/26/2017.
- */
+@RunWith(JUnitParamsRunner.class)
+
 public class ModTest {
     @Test
-    public void mod() {
-        Mod mod = new Mod();
-        Assert.assertEquals(1, mod.mod(16, 3));
+    @FileParameters(value = "src/test/resources/modpositive.csv",
+            mapper = CsvWithHeaderMapper.class)
+    public void mod(int a, int b, int result) {
+        Assert.assertEquals(result, Mod.mod(a,b));
     }
 
     @Test
