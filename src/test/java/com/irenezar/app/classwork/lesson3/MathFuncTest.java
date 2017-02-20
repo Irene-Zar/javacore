@@ -21,4 +21,9 @@ public class MathFuncTest {
         Assert.assertEquals(expOut, MathFunc.multiply(argA, argB));
     }
 
+    @Test
+    public void absolutenegative() {
+        MathFunc mathFunc = new MathFunc();
+        Assert.assertNotEquals(0, MathFunc.multiply(1,1));
+    }
 }
