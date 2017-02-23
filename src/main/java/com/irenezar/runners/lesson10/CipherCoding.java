@@ -9,14 +9,13 @@ public class CipherCoding {
     public static void main(String[] args) {
         String regular = "abcdefghijklmnopqrstuvwxyz1234567890 !";
         String coded = "zyxwvutsrqponmlkjihgfedcba0987654321! ";
-        System.out.println("Enter a password:");
+        System.out.println("Enter a word:");
         Scanner scanner = new Scanner(System.in);
-        String enteredCode = scanner.nextLine();
-        StringBuilder value = new StringBuilder(enteredCode);
+        StringBuilder enteredValue = new StringBuilder(scanner.nextLine());
         StringBuilder codedvalue = new StringBuilder();
-        for (int j = 0; j < value.length(); j++) {
+        for (int j = 0; j < enteredValue.length(); j++) {
             for (int i = 0; i < regular.length(); i++) {
-                if (value.charAt(j) == regular.charAt(i)){
+                if (enteredValue.charAt(j) == regular.charAt(i)) {
                     codedvalue.append(coded.toCharArray()[i]);
                 }
             }

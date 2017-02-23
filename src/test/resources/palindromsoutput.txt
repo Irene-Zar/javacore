@@ -1,0 +1,5 @@
+moom is a palindrome
+cat is not a palindrome
+madam is a palindrome
+Ololo is a palindrome
+pig is not a palindrome
