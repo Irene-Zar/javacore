@@ -20,6 +20,15 @@ public class CipherCoding {
                 }
             }
         }
-        System.out.println(codedvalue.toString());
+        System.out.println("Coded value is "+codedvalue.toString());
+        StringBuilder decodedvalue = new StringBuilder();
+        for (int k = 0; k < codedvalue.length(); k++) {
+            for (int l = 0; l < coded.length(); l++) {
+                if (codedvalue.charAt(k) == coded.charAt(l)){
+                    decodedvalue.append(regular.toCharArray()[l]);
+                }
+            }
+        }
+        System.out.println("Decoded value is "+decodedvalue.toString());
     }
 }
