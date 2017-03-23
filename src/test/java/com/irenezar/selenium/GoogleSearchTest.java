@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 
 import java.util.concurrent.TimeUnit;
 
